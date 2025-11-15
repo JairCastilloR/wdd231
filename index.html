@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jair Castillo Rojas</title>
+        <meta name="description" content="Discover the Chamber of Commerce Site of Pimentel City in Perú and learn more about the city's history, culture, and economy to promote tourism and economic development.">
+        <meta property="og:title" content="Chamber of Commerce Site of Pimentel City in Perú">
+        <meta property="og:description" content="Discover the Chamber of Commerce Site of Pimentel City in Perú and learn more about the city's history, culture, and economy to promote tourism and economic development.">
+        <meta property="og:locale" content="en_US">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="favicon.ico">
+        <script src="scripts/navigations.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Logo of the site" loading="lazy">
+                    <span class="site-title">Jair Castillo Rojas</span>
+                </div>
+                <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+                    <span class="icon-open">☰</span>
+                    <span class="icon-close">✖</span>
+                </button>
+            </div>
+            <nav id="primary-nav" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
+                    <li><a href="final/index.html">Final</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Home</h1>
+            <section id="about">
+                <section>
+                    <h2>About me</h2>
+                    <p>Hello! My name is Jair Castillo from Pimentel-Chiclayo, Perú. I'm currently pursuing a bachelor's degree in Professional Studies at BYU-Idaho through BYU - Pathway Worldwide Program.<br><br>
+                    I'm passionate about web development and computer programming, project management and entrepreneurship. I believe in create a better world through technology.</p>
+                </section>
+
+                <section id="student-photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/student_photo.webp" alt="Photo of Jair Castillo">
+                </section>
+            </section>
+            <section>
+                <div id="filter-buttons">
+                    <button data-filter="all">All courses</button>
+                    <button data-filter="wdd">WDD courses</button>
+                    <button data-filter="cse">CSE courses</button>
+                </div>
+                <h2>Web certificate courses</h2>
+                <div id="courses-container"></div>
+                <div id="credits-total">
+                    The total credits for courses listed above is: <span id="total-credits">0</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://github.com/JairCastilloR" target="_blank" rel="noopener">
+                    <img src="images/github.svg" alt="GitHub logo" loading="lazy" width="30" height="30">
+                </a>
+                <a href="https://www.linkedin.com/in/jair-castillo-rojas-6b649818/" target="_blank" rel="noopener">
+                    <img src="images/linkedin.svg" alt="LinkedIn logo" loading="lazy" width="30" height="30">
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                    <img src="images/instagram.svg" alt="Instagram logo" loading="lazy" width="30" height="30">
+                </a>
+            </div>
+            <p>&copy; <span id="currentYear"></span> Jair Castillo Rojas, Perú</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

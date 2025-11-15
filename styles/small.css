@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.site-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-toggle .icon-close {
+    display: none;
+}
+
+.menu-toggle[aria-expanded="true"] .icon-open {
+    display: none;
+}
+
+.menu-toggle[aria-expanded="true"] .icon-close {
+    display: inline;
+}
+
+.navigation {
+    display: none;
+    margin-top: 1rem;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    background: #000;
+    margin-bottom: 0.1rem;
+    padding: 0.5rem;
+}
+
+.navigation a {
+    color: #8dc8f0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#about {
+    background: #8dc8f0;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+#student-photo img {
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#filter-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+#filter-buttons button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #0066cc;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filter-buttons button:hover {
+    background: #e7f1ff;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    background: #fff;
+    margin-bottom: 1rem;
+}
+
+.course-card.completed {
+    background: #e0ffe0;
+    border-color: #008800;
+}
+
+footer {
+    text-align: center;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}

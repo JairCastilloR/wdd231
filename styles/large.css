@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+
+    body {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: block !important;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    #courses-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
