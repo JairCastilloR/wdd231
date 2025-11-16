@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Cafetería La Plaza",
+    "address": "Av. Principal 123",
+    "phone": "(555) 111-2222",
+    "website": "https://laplaza.example.com",
+    "image": "images/cafe.webp",
+    "description": "Cafetería con pastelería artesanal."
+  },
+  {
+    "name": "Ferretería El Tornillo",
+    "address": "Calle 5 #45",
+    "phone": "(555) 333-4444",
+    "website": "https://eltornillo.example.com",
+    "image": "images/ferreteria.webp",
+    "description": "Suministros y herramientas para el hogar."
+  },
+  {
+    "name": "Hotel Sol y Mar",
+    "address": "Paseo Marítimo 10",
+    "phone": "(555) 666-7777",
+    "website": "https://solymar.example.com",
+    "image": "images/hotel.webp",
+    "description": "Alojamiento frente al mar."
+  },
+  {
+    "name": "Tienda Verde",
+    "address": "Av. Ecologica 77",
+    "phone": "(555) 888-9999",
+    "website": "https://tiendaverde.example.com",
+    "image": "images/tienda.webp",
+    "description": "Productos orgánicos y locales."
+  },
+  {
+    "name": "Taller Mecánico Rápido",
+    "address": "Ruta 9 km 2",
+    "phone": "(555) 000-1212",
+    "website": "https://tallerrapido.example.com",
+    "image": "images/taller.webp",
+    "description": "Servicio rápido y confiable para vehículos."
+  }
+]
