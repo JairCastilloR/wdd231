@@ -15,14 +15,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 640px)">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/home.css">
   <link rel="icon" href="favicon.ico">
 
   <script src="scripts/navigation.js" type="module"></script>
   <script src="scripts/directory.js" type="module"></script>
   <script src="scripts/date.js" type="module"></script>
+  <script src="scripts/spotlight.mjs" type="module"></script>
+  <script src="scripts/weather-spotlights.mjs" type="module"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
             <img src="images/logo.webp" alt="Chamber Logo" loading="lazy" width="100" height="100">
             <div>
                 <strong>Pimentel's Chamber of Commerce</strong><br>
-                <small>Directory</small>
+                <small>Home</small>
             </div>
         </div>
         <button class="menu-toggle" aria-controls="navMenu" aria-expanded="false">
@@ -50,16 +51,54 @@
 
   <main>
     <section class="hero">
-      <h1>Business Directory</h1>
-      <p>Members of Business and Organizations in Pimentel</p>
+        <img src="images/chamber.webp" alt="Chamber of Commerce Building">
+
+        <div class="hero-overlay">
+            <a href="join.html" class="cta-btn">Join the Chamber</a>
+        </div>
     </section>
 
-    <section class="controls">
-      <button id="gridBtn" class="active">Grid</button>
-      <button id="listBtn">List</button>
-    </section>
-
-    <section id="directory" class="members"></section>
+    <div class="container">
+        <h1>Home</h1>
+        <div class="home-sections">
+            <section id="events">
+                <h2>Upcoming Events</h2>
+                <div id="events-data">    
+                    <div>
+                        <h3>Business Networking Mixer</h3>
+                        <p>Date: July 15, 2024</p>
+                        <p>Location: Pimentel Community Center</p>
+                    </div>
+                    <div>
+                        <h3>Annual Chamber Gala</h3>
+                        <p>Date: August 22, 2024</p>
+                        <p>Location: Grand Ballroom, Pimentel Hotel</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <div class="current-weather">
+                    <div class="weather-content">
+                        <img id="weather-icon" alt="weather icon">
+                        <div class="weather-details">
+                            <p id="current-temp"></p>
+                            <p id="current-desc"></p>
+                            <p id="high-low"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h2>Weather Forecast</h2>
+                    <div id="forecast"></div>
+                </div>
+            </section>
+        </div class="members-spotlight">
+            <section id="directory" class="members-grid">
+            </section>
+        </div>
   </main>
 
   <footer>

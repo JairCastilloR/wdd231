@@ -19,7 +19,6 @@ body {
 }
 
 header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -42,6 +41,7 @@ header {
 #navMenu a {
   text-decoration: none;
   color: var(--text);
+  font-weight: 600;
 }
 
 #navMenu.show {
@@ -152,9 +152,34 @@ header {
 }
 
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
+  background-color: #bed4ff;
+  padding: 2rem 1rem;
   text-align: center;
+}
+
+footer .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .social img{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .menu-toggle {

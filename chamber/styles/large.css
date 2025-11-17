@@ -1,13 +1,22 @@
 @media (min-width: 768px) {
-    #navMenu {
-    display: flex;  
-    flex-direction: row;
-    gap: 1rem;
-    }
+      header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    #menuBtn {
+  /* Oculta el menú hamburguesa en desktop */
+  .menu-toggle {
     display: none;
-    }
+  }
+
+  /* El menú se muestra horizontal en desktop */
+  #navMenu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+  }
 
     .members {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -19,7 +28,4 @@
     margin: 1rem auto;
     }
 
-    .menu-toggle {
-            display: none;
-        }
 }
