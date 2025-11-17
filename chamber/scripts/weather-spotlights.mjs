@@ -1,19 +1,14 @@
-// -------------------------------------
-// CONFIG
-// -------------------------------------
+
 const apiKey = "aaddd3c5f12b6cb13af88683e27b237d";
 
 const lat = -6.7714; 
 const lon = -79.8409;
 
-// URLs
+
 const currentURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
 
-// -------------------------------------
-// CURRENT WEATHER
-// -------------------------------------
 async function loadCurrentWeather() {
   try {
     const response = await fetch(currentURL);
@@ -37,7 +32,6 @@ async function loadCurrentWeather() {
     document.getElementById("sunset").textContent =
       `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}`;
 
-    // WEATHER ICON
     const icon = data.weather[0].icon;
     const iconURL = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     document.getElementById("weather-icon").src = iconURL;
@@ -49,15 +43,13 @@ async function loadCurrentWeather() {
 
 
 
-// -------------------------------------
-// FORECAST (3 días)
-// -------------------------------------
+
 async function loadForecast() {
   try {
     const response = await fetch(forecastURL);
     const data = await response.json();
 
-    // Forecast para misma hora del día → cada 24h (8 intervals)
+ 
     const indices = [8, 16, 24];
     const labels = ["Tomorrow", "In 2 Days", "In 3 Days"];
 
@@ -76,25 +68,20 @@ async function loadForecast() {
   }
 }
 
-
-
-// -------------------------------------
-// SPOTLIGHTS
-// -------------------------------------
 async function loadSpotlights() {
   try {
     const response = await fetch("data/members.json");
     const json = await fetch("data/members.json").then(res => res.json());
 
-    // FILTRAR GOLD / SILVER
+   
     const premium = json.members.filter(m =>
       m.membership === "Gold" || m.membership === "Silver"
     );
 
-    // RANDOM
+ 
     const shuffled = premium.sort(() => 0.5 - Math.random());
 
-    // 2 o 3 empresas al azar
+  
     const total = Math.random() > 0.5 ? 3 : 2;
     const selected = shuffled.slice(0, total);
 
@@ -122,11 +109,6 @@ async function loadSpotlights() {
   }
 }
 
-
-
-// -------------------------------------
-// INIT
-// -------------------------------------
 loadCurrentWeather();
 loadForecast();
 loadSpotlights();
