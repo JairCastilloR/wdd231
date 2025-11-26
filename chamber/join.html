@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join Chamber of Commerce Membership</title>
+  <meta name="description" content="Become a member of the Pimentel Chamber of Commerce.">
+  <meta name="author" content="Jair Castillo Rojas - WDD 231">
+  <meta property="og:title" content="Join Chamber of Commerce Membership">
+  <meta property="og:description" content="Become a member of the Pimentel Chamber of Commerce.">
+  <meta property="og:image" content="images/logo.webp">
+  <meta property="og:url" content="https://jaircastillorojas.github.io/wdd231/chamber/join.html">
+ 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="icon" href="../favicon.ico">
+
+  <script src="scripts/navigation.js" type="module"></script>
+  <script src="scripts/date.js" type="module"></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="brand">
+        <img src="images/logo.webp" alt="Chamber Logo" loading="lazy" width="100" height="100">
+        <div>
+          <strong>Pimentel's Chamber of Commerce</strong><br>
+          <small>Join</small>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-controls="navMenu" aria-expanded="false">
+        <span class="icon-open">☰</span>
+        <span class="icon-close">✖</span>
+      </button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html" class="active">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="join-form-container">
+    <h1>Membership Application</h1>
+
+    <form method="get" action="thankyou.html" class="join-form">
+
+      <label>
+        First Name*:
+        <input type="text" name="firstName" title="Enter your first name" required autocomplete="given-name" placeholder="Jair">
+      </label>
+
+      <label>
+        Last Name*:
+        <input type="text" name="lastName" title="Enter your last name" required autocomplete="family-name" placeholder="Castillo Rojas">
+      </label>
+
+      <label>
+        Organizational Title*:
+        <input type="text" name="orgTitle" title="Enter your organization title" required autocomplete="organization-title" placeholder="CONIGE"
+               pattern="[A-Za-zÀ-ÖØ-öø-ÿ \\-]{7,}">
+      </label>
+
+      <label>
+        Email*:
+        <input type="email" name="email" title="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="email" placeholder="jaircastillo@example.com">
+      </label>
+
+      <label>
+        Phone*:
+        <input type="tel" name="phone" title="Enter your phone number" required pattern="\d{9}" autocomplete="tel" placeholder="962849328">
+      </label>
+
+      <label>
+        Organization Name*:
+        <input type="text" name="orgName" title="Enter your organization name" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ \\-]{7,}" autocomplete="organization" placeholder="Business XYZ">
+      </label>
+
+      <label>
+        Business Description:   
+        <textarea name="description" title="Enter your business description" autocomplete="off"></textarea>
+      </label>
+
+      <label>
+        Membership Level*:
+        <select name="membershipLevel" title="Select your membership level" required autocomplete="off">
+          <option value="" disabled selected>-- Select Membership Level --</option>
+          <option value="NP">NP (Non Profit - Free)</option>
+          <option value="Bronze">Bronze</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+        </select>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Submit Application">
+    </form>
+    </section>
+
+    <section class="membership-cards-container">
+    <h2>Membership Levels</h2>
+
+    <div class="membership-cards">
+      <div class="card" data-level="NP">NP Membership</div>
+      <div class="card" data-level="Bronze">Bronze Membership</div>
+      <div class="card" data-level="Silver">Silver Membership</div>
+      <div class="card" data-level="Gold">Gold Membership</div>
+    </div>
+
+    <div class="modal" id="modal-NP">
+      <div class="modal-content">
+        <h3>NP Membership</h3>
+        <p>Designed for non-profit organizations. Free membership.</p>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-Bronze">
+      <div class="modal-content">
+        <h3>Bronze Membership</h3>
+        <p>Basic benefits and business visibility tools.</p>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-Silver">
+      <div class="modal-content">
+        <h3>Silver Membership</h3>
+        <p>Includes Bronze benefits + promotional events support.</p>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-Gold">
+      <div class="modal-content">
+        <h3>Gold Membership</h3>
+        <p>Premium benefits + highlighted directory placement.</p>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/JairCastilloR" target="_blank" rel="noopener">
+        <img src="images/github.svg" alt="GitHub logo" loading="lazy" width="30" height="30">
+      </a>
+      <a href="https://www.linkedin.com/in/jair-castillo-rojas-6b649818/" target="_blank" rel="noopener">
+        <img src="images/linkedin.svg" alt="LinkedIn logo" loading="lazy" width="30" height="30">
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <img src="images/instagram.svg" alt="Instagram logo" loading="lazy" width="30" height="30">
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> Jair Castillo Rojas, Perú</p>
+    <p>Last modified: <span id="lastMod"></span></p>
+  </footer>
+
+</body>
+</html>
