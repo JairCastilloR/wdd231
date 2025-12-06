@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Pimentel</title>
+  <meta name="description" content="Discover what to see and do in Pimentel, Peru.">
+  <meta name="author" content="Jair Castillo Rojas - WDD 231">
+  <meta property="og:title" content="Discover Pimentel">
+  <meta property="og:description" content="Discover what to see and do in Pimentel, Peru.">
+  <meta property="og:url" content="https://jaircastillor.github.io/wdd231/chamber/index.html">
+  <meta property="og:image" content="https://jaircastillor.github.io/wdd231/chamber/images/chamber_meta.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/visit.js" defer></script>
+  <script src="scripts/navigation.js" type="module"></script>
+  <script src="scripts/date.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <div class="brand">
+            <img src="images/logo.webp" alt="Chamber Logo" loading="lazy" width="100" height="100">
+            <div>
+                <strong>Pimentel's Chamber of Commerce</strong><br>
+                <small>Discover</small>
+            </div>
+        </div>
+        <button class="menu-toggle" aria-controls="navMenu" aria-expanded="false">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </button>
+    </div>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html" class="active">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+        <div class="visit-message" id="visitMessage"></div>
+
+    <section class="discover-container">
+      <div class="interest-card">
+        <img src="images/playa.webp" alt="Pimentel Beach" width="300" height="200">
+        <h3>Pimentel Beach</h3>
+        <p><strong>Address:</strong> Malecón Pimentel</p>
+        <p>Beautiful sandy beach ideal for sunsets and surfing.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/muelle.webp" alt="Historic Boardwalk" width="300" height="200">
+        <h3>Historic Boardwalk</h3>
+        <p><strong>Address:</strong> Malecón Grau</p>
+        <p>Iconic wooden dock with history and ocean views.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/artesanias.webp" alt="Artisan Market" width="300" height="200">
+        <h3>Artisan Market</h3>
+        <p><strong>Address:</strong> Calle Balta</p>
+        <p>Local crafts and handmade souvenirs from Pimentel.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/restaurant.webp" alt="Seafood Restaurants" width="300" height="200">
+        <h3>Seafood Restaurants</h3>
+        <p><strong>Address:</strong> Av. Grau</p>
+        <p>Fresh seafood dishes from local fishermen daily.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/surf.webp" alt="Surf Schools" width="300" height="200">
+        <h3>Surf Schools</h3>
+        <p><strong>Address:</strong> South Pimentel</p>
+        <p>Great waves and beginner-friendly surf instructors.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/pesca.webp" alt="Fishing Pier" width="300" height="200">
+        <h3>Fishing Pier</h3>
+        <p><strong>Address:</strong> Pimentel Port</p>
+        <p>Spend a quiet afternoon fishing with locals.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/marinera.webp" alt="Marinera Shows" width="300" height="200">
+        <h3>Marinera Shows</h3>
+        <p><strong>Address:</strong> Cultural Center</p>
+        <p>Experience traditional Peruvian dance performances.</p>
+      </div>
+
+      <div class="interest-card">
+        <img src="images/aves.webp" alt="Birdwatching Area" width="300" height="200">
+        <h3>Birdwatching Area</h3>
+        <p><strong>Address:</strong> Playa Norte</p>
+        <p>Home to coastal birds and a peaceful natural area.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/JairCastilloR" target="_blank" rel="noopener"><img src="images/github.svg" width="30"></a>
+      <a href="https://www.linkedin.com/in/jair-castillo-rojas-6b649818/" target="_blank" rel="noopener"><img src="images/linkedin.svg" width="30"></a>
+      <a href="#"><img src="images/instagram.svg" width="30"></a>
+    </div>
+    <p>&copy; <span id="year"></span> Jair Castillo Rojas, Perú</p>
+    <p>Last modified: <span id="lastMod"></span></p>
+  </footer>
+</body>
+</html>

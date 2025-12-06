@@ -5,12 +5,11 @@
     align-items: center;
   }
 
-  /* Oculta el menú hamburguesa en desktop */
   .menu-toggle {
     display: none;
   }
 
-  /* El menú se muestra horizontal en desktop */
+ 
   #navMenu {
     display: flex !important;
     flex-direction: row;
