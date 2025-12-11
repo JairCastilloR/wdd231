@@ -219,3 +219,68 @@ body {
   font-size: .85rem;
   color: var(--footer-muted);
 }
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;   
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff; 
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        position: relative;
+    }
+
+    
+    nav a {
+        display: none;
+        width: 100%;
+        background: var(--secondary);
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    nav.open a {
+        display: block;
+        animation: fadeIn 0.3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav.open .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    nav.open .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    nav.open .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+}
+
