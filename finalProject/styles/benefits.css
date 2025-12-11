@@ -1,0 +1,197 @@
+:root {
+  --primary: #f59e0b;      
+  --secondary: #0f172a;     
+  --secondary2: #f8fafc;   
+  --border: #e2e8f0;        
+  --footer-muted: #cbd5f5;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--secondary2);
+  color: var(--secondary);
+}
+
+.site-header {
+  background: var(--secondary);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.logo-circle {
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.cta-btn {
+  background: var(--primary);
+  color: #000 !important;
+  padding: .7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+
+.benefits-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 5rem;
+  text-align: center;
+}
+
+.section-label {
+  color: var(--primary);
+  font-size: .8rem;
+  letter-spacing: .15em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section-title span {
+  color: var(--primary);
+}
+
+.section-desc {
+  color: var(--secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  background: #fff;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: .7rem;
+}
+
+.card-text {
+  color: var(--secondary);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.site-footer {
+  margin-top: 5rem;
+  background: radial-gradient(circle at top, #020617, #000);
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.site-footer h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer h2 span {
+  color: var(--primary);
+}
+
+.site-footer p {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: var(--footer-muted);
+  line-height: 1.6;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer-btn {
+  padding: .8rem 1.6rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-btn.primary {
+  background: var(--primary);
+  color: #000;
+}
+
+.footer-btn.secondary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.footer-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: .85rem;
+  color: var(--footer-muted);
+}

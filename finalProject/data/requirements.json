@@ -1,0 +1,46 @@
+{
+  "cards": [
+    {
+      "icon": "🎓",
+      "title": "Professional Credentials",
+      "items": [
+        "Licensed engineer, architect, or certified contractor",
+        "Minimum 3 years of professional experience",
+        "Valid professional insurance coverage"
+      ]
+    },
+    {
+      "icon": "📊",
+      "title": "Track Record",
+      "items": [
+        "Portfolio of at least 5 completed projects",
+        "Verifiable references from past clients",
+        "Clean record with regulatory bodies"
+      ]
+    },
+    {
+      "icon": "✅",
+      "title": "Quality Standards",
+      "items": [
+        "Commitment to CONIGE quality protocols",
+        "Willingness to undergo periodic reviews",
+        "Adherence to project timelines and budgets"
+      ]
+    },
+    {
+      "icon": "📄",
+      "title": "Documentation",
+      "items": [
+        "Up-to-date professional certifications",
+        "Business registration documents",
+        "Tax compliance certificates"
+      ]
+    }
+  ],
+  "idealPartner": [
+    "Passionate about delivering exceptional work",
+    "Open to collaboration and feedback",
+    "Eager to grow without the headache of business management",
+    "Ready to commit to long-term partnership"
+  ]
+}

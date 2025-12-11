@@ -1,0 +1,30 @@
+[
+  {
+    "number": "01",
+    "icon": "📥",
+    "title": "Apply & Get Vetted",
+    "text": "Submit your credentials and portfolio. Our team reviews your qualifications to ensure alignment with our quality standards.",
+    "badge": "2–5 business days"
+  },
+  {
+    "number": "02",
+    "icon": "🤝",
+    "title": "Partnership Agreement",
+    "text": "Once approved, we formalize our partnership. Clear terms, fair compensation structure, and mutual commitment to excellence.",
+    "badge": "Transparent terms"
+  },
+  {
+    "number": "03",
+    "icon": "🎯",
+    "title": "Project Matching",
+    "text": "We connect you with projects that match your expertise and capacity. You choose which opportunities to pursue.",
+    "badge": "You stay in control"
+  },
+  {
+    "number": "04",
+    "icon": "🚀",
+    "title": "Execute & Grow",
+    "text": "Focus on delivering exceptional work while we handle client management, payments, and finding your next project.",
+    "badge": "Continuous pipeline"
+  }
+]
